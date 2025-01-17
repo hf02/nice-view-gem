@@ -1,12 +1,9 @@
 # MY version of nice-view-gem
 
-[Check out the original one!!!!](https://github.com/M165437/nice-view-gem)
+[Check out the original one](https://github.com/M165437/nice-view-gem)!!!!
 
-## Changes
+You can view my changes at [my corne layout repo](https://github.com/hf02/corne-layout).
 
-- Layer indicator
-  - Does not render if on the main layer
-  - Has a white background for emphasis
 
 ## Usage
 
