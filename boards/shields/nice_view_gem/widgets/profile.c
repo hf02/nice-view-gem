@@ -7,7 +7,7 @@ static void draw_inactive_profiles(lv_obj_t *canvas, const struct status_state *
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
-    lv_canvas_draw_img(canvas, 18, 129 + BUFFER_OFFSET_BOTTOM, &profiles, &img_dsc);
+    lv_canvas_draw_img(canvas, 18, 110 + BUFFER_OFFSET_BOTTOM, &profiles, &img_dsc);
 }
 
 static void draw_active_profile(lv_obj_t *canvas, const struct status_state *state) {
