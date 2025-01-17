@@ -27,19 +27,19 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
             // white text with a line above it
             
             // draw the top line...
-            lv_draw_rect_dsc_t rect_dsc_top;
-            init_rect_dsc(&rect_dsc_top, LVGL_FOREGROUND);
-            lv_canvas_draw_rect(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, 1, &rect_dsc_top);
+            lv_draw_rect_dsc_t rect_dsc_top2;
+            init_rect_dsc(&rect_dsc_top2, LVGL_FOREGROUND);
+            lv_canvas_draw_rect(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, 1, &rect_dsc_top2);
 
             // ...and the bottom line
-            lv_draw_rect_dsc_t rect_dsc_bottom;
-            init_rect_dsc(&rect_dsc_bottom, LVGL_FOREGROUND);
-            lv_canvas_draw_rect(canvas, 0, 161 + BUFFER_OFFSET_BOTTOM, 68, 1, &rect_dsc_bottom);
+            lv_draw_rect_dsc_t rect_dsc_bottom2;
+            init_rect_dsc(&rect_dsc_bottom2, LVGL_FOREGROUND);
+            lv_canvas_draw_rect(canvas, 0, 161 + BUFFER_OFFSET_BOTTOM, 68, 1, &rect_dsc_bottom2);
 
             // draw the text
-            lv_draw_label_dsc_t label_dsc;
-            init_label_dsc(&label_dsc, LVGL_FOREGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_CENTER);
-            lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc, text);
+            lv_draw_label_dsc_t label_dsc2;
+            init_label_dsc(&label_dsc2, LVGL_FOREGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_CENTER);
+            lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc2, text);
             break;
 
         // everything else
@@ -47,14 +47,14 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
             // black text on white background            
 
             // draw the background
-            lv_draw_rect_dsc_t rect_dsc;
-            init_rect_dsc(&rect_dsc, LVGL_FOREGROUND);
-            lv_canvas_draw_rect(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, 15, &rect_dsc);
+            lv_draw_rect_dsc_t rect_dsc1;
+            init_rect_dsc(&rect_dsc1, LVGL_FOREGROUND);
+            lv_canvas_draw_rect(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, 15, &rect_dsc1);
 
             // draw the text
-            lv_draw_label_dsc_t label_dsc;
-            init_label_dsc(&label_dsc, LVGL_BACKGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_CENTER);
-            lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc, text);
+            lv_draw_label_dsc_t label_dsc1;
+            init_label_dsc(&label_dsc1, LVGL_BACKGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_CENTER);
+            lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc1, text);
             break;
     }
 
