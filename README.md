@@ -1,16 +1,12 @@
-# nice-view-gem
+# MY version of nice-view-gem
 
-![Preview](https://github.com/m165437/nice-view-gem/blob/main/.github/assets/preview.jpg?raw=true)
+[Check out the original one!!!!](https://github.com/M165437/nice-view-gem)
 
-### A sleek customization for the nice!view shield
+## Changes
 
-Add this shield to your keymap repo (see usage below) and run the GitHub action to build your firmware.
-
-### Features
-
-- Uses a **fixed range for the chart and gauge deflection**. 📈
-- Includes a **beautiful animation** for the peripheral of split keyboards. 💎
-- Comes with **pixel-perfect symbols** for BLE and USB connections. 📡
+- Layer indicator
+  - Does not render if on the main layer
+  - Has a white background for emphasis
 
 ## Usage
 
@@ -22,14 +18,14 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: m165437 #new entry
-      url-base: https://github.com/M165437 #new entry
+      url-base: https://github.com/hf02 #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: nice-view-gem #new entry
-      remote: m165437 #new entry
+      remote: hf02 #new entry
       revision: main #new entry
   self:
     path: config
