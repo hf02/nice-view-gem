@@ -34,7 +34,7 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
             // ...and the bottom line
             lv_draw_rect_dsc_t rect_dsc_bottom2;
             init_rect_dsc(&rect_dsc_bottom2, LVGL_FOREGROUND);
-            lv_canvas_draw_rect(canvas, SCREEN_WIDTH - 2, 160 + BUFFER_OFFSET_BOTTOM, 1, 15, &rect_dsc_bottom2);
+            lv_canvas_draw_rect(canvas, SCREEN_WIDTH - 2, 146 + BUFFER_OFFSET_BOTTOM, 2, 15, &rect_dsc_bottom2);
 
             // draw the text
             lv_draw_label_dsc_t label_dsc2;
