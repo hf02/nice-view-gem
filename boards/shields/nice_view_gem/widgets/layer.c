@@ -24,6 +24,8 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
         case 8:
         case 9:
         case 10:
+        // video layer
+        case 11:
             // white text with a lines on the sides
             
             // draw the left line...
