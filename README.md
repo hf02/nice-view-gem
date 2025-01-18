@@ -2,8 +2,16 @@
 
 [Check out the original one](https://github.com/M165437/nice-view-gem)!!!!
 
-You can view my changes at [my corne layout repo](https://github.com/hf02/corne-layout).
+## Changes
 
+- The battery and connection status have been put on a single row at the top
+- The WPM gauge was removed, and the WPM graph + profiles were moved up into the center
+- The layer indicator has a more noticable background, and it hides itself when on the default layer.
+  - This is so it's a lot more noticable when you're on a different layer.
+  - Layers that you tend to stay in (like application specific ones, or a gaming layer) can use a less intrusive style. However, their values are hard-coded.
+- The right image is no longer animated and was moved to the bottom so you can occupy the entire display with it.
+
+Also, I'm very inexperinced with C, so don't expect the most quality code.
 
 ## Usage
 
