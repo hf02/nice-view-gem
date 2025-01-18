@@ -50,6 +50,8 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     // Draw widgets
     draw_wpm_status(canvas, state);
 
+    draw_profile_status(canvas, state);
+
     // Rotate for horizontal display
     rotate_canvas(canvas, cbuf);
 }
@@ -59,7 +61,6 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     fill_background(canvas);
 
     // Draw widgets
-    draw_profile_status(canvas, state);
     draw_layer_status(canvas, state);
 
     // Rotate for horizontal display
